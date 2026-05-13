@@ -1,0 +1,19 @@
+{
+  "name": "Code Reviewer",
+  "model": "llama3:8b",
+  "system_prompt": "You are an expert code reviewer. Analyze code for bugs, security issues, and best practices. Provide actionable feedback with code examples.",
+  "temperature": 0.3,
+  "max_tokens": 2048,
+  "tools": ["code_analysis", "web_search"],
+  "memory": {
+    "type": "conversation",
+    "max_messages": 50
+  },
+  "knowledge_bases": ["code-standards-kb"],
+  "metadata": {
+    "category": "Development",
+    "tags": ["code", "review", "security"],
+    "version": "1.0.0",
+    "author": "OwnAI Team"
+  }
+}
